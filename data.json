@@ -134,51 +134,59 @@
   },
   {
     "id": 20,
-    "image": "items/tablet.jpg",
-    "description": "Tablet that replaced my laptop but didn't",
-    "price": 649.99
+    "image": "items/erin.jpeg",
+    "description": "Camera",
+    "price": 1049.99,
+    "leader": "Erin"
   },
   {
     "id": 21,
-    "image": "items/speaker.jpg",
-    "description": "Bluetooth speaker for outdoor parties",
-    "price": 129.99
+    "image": "items/michael.jpg",
+    "description": "Guitar",
+    "price": 1600,
+    "leader": "Michael"
   },
   {
     "id": 22,
-    "image": "items/lamp.jpg",
-    "description": "Designer lamp that's too bright",
-    "price": 189.99
+    "image": "items/esther.jpeg",
+    "description": "Canon Digital Camera",
+    "price": 1000,
+    "leader": "Esther Choi"
   },
   {
     "id": 23,
-    "image": "items/rug.jpg",
-    "description": "Area rug that doesn't match anything",
-    "price": 299.99
+    "image": "items/jiye.jpeg",
+    "description": "Medicube Booster Pro",
+    "price": 356.83,
+    "leader": "Ji ye Song"
   },
   {
     "id": 24,
-    "image": "items/painting.jpg",
-    "description": "Art piece I thought would appreciate",
-    "price": 499.99
+    "image": "items/joshua.jpeg",
+    "description": "Bass guitar pedalboard",
+    "price": 1400,
+    "leader": "Joshua"
   },
   {
     "id": 25,
-    "image": "items/vase.jpg",
-    "description": "Vase that's too tall for any flowers",
-    "price": 89.99
+    "image": "items/esther2.jpeg",
+    "description": "Thrifted Carpeter Pants",
+    "price": 98,
+    "leader": "Esther Kim"
   },
   {
     "id": 26,
-    "image": "items/mirror.jpg",
-    "description": "Full-length mirror that warps reality",
-    "price": 159.99
+    "image": "items/eugene.jpg",
+    "description": "My unbuilt keyboard bc idk what switches to buy yet",
+    "price": 920,
+    "leader": "Eugene"
   },
   {
     "id": 27,
-    "image": "items/plant.jpg",
-    "description": "Indoor plant that's impossible to keep alive",
-    "price": 69.99
+    "image": "items/suzy.jpeg",
+    "description": "iPad",
+    "price": 1385.94,
+    "leader": "Suzy"
   },
   {
     "id": 28,
