@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Welcome Screen -->
+      <div id="welcome-screen" class="screen active">
+        <div class="header">
+          <h1>💰 Price Guessing Game</h1>
+          <p class="subtitle">Guess the price of embarrassing purchases!</p>
+        </div>
+
+        <div class="rules">
+          <h2>How to Play:</h2>
+          <ul>
+            <li>Guess the price of items within the margin of error</li>
+            <li>Fixed 10% margin of error for all items</li>
+            <li>Get 15 out of 30 items correct to pass!</li>
+            <li>Submit your guess and move to the next question</li>
+            <li>Get feedback on each answer with hot/cold indicators!</li>
+            <li>Questions appear in the same order each time</li>
+          </ul>
+
+          <div class="hot-cold-legend">
+            <h3>🔥 Hot/Cold Guide:</h3>
+            <ul>
+              <li><strong>🔥 Very Hot:</strong> Within 5% of actual price</li>
+              <li><strong>🔥 Hot:</strong> Within 10% of actual price</li>
+              <li><strong>🌡️ Warm:</strong> Within 20% of actual price</li>
+              <li><strong>❄️ Cold:</strong> Within 30% of actual price</li>
+              <li><strong>🧊 Very Cold:</strong> More than 30% off</li>
+            </ul>
+          </div>
+        </div>
+
+        <button id="start-game" class="btn btn-primary">Start Game</button>
+      </div>
+
+      <!-- Game Screen -->
+      <div id="game-screen" class="screen">
+        <div class="game-header">
+          <div class="progress">
+            <span id="current-item">Item 1</span> of
+            <span id="total-items">30</span>
+          </div>
+          <div class="progress-needed">
+            Need: <span id="correct-needed">15</span> to pass
+          </div>
+        </div>
+
+        <div class="item-display">
+          <img id="item-image" src="" alt="Item to guess" />
+          <div class="item-info">
+            <h3 id="item-description">Loading...</h3>
+          </div>
+        </div>
+
+        <div class="guess-section">
+          <div class="margin-info">
+            <p>Margin of Error: <span id="current-margin">10%</span></p>
+          </div>
+
+          <div class="input-group">
+            <label for="price-guess">Your Price Guess:</label>
+            <div class="price-input">
+              <span class="currency">$</span>
+              <input
+                type="number"
+                id="price-guess"
+                placeholder="0.00"
+                step="0.01"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <button id="submit-guess" class="btn btn-primary">
+            Submit Guess
+          </button>
+        </div>
+
+        <div class="feedback" id="feedback" style="display: none">
+          <div id="feedback-content"></div>
+          <button
+            id="next-item"
+            class="btn btn-secondary"
+            style="display: none"
+          >
+            Next Item
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Over Screen -->
+      <div id="game-over-screen" class="screen">
+        <div class="header">
+          <h1>🎉 PASSED!</h1>
+          <div class="final-score">
+            <h2>Final Score: <span id="final-score">0</span>/30</h2>
+            <p>Correct Answers: <span id="final-correct">0</span></p>
+            <p class="pass-status">✅ You passed! Show this to your leader.</p>
+          </div>
+        </div>
+
+        <button id="play-again" class="btn btn-primary">Play Again</button>
+      </div>
+
+      <!-- Game Over (Failed) Screen -->
+      <div id="game-failed-screen" class="screen">
+        <div class="header">
+          <h1>❌ FAILED</h1>
+          <p>You didn't get enough correct answers!</p>
+          <div class="final-score">
+            <h2>Final Score: <span id="failed-score">0</span>/30</h2>
+            <p>Correct Answers: <span id="failed-correct">0</span></p>
+            <p class="fail-status">
+              ❌ You need 15 correct to pass. Try again!
+            </p>
+          </div>
+        </div>
+
+        <button id="try-again" class="btn btn-primary">Try Again</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

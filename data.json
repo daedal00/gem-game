@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "image": "items/nick.jpeg",
+    "description": "Shoes",
+    "price": 830
+  },
+  {
+    "id": 2,
+    "image": "items/bobby.jpg",
+    "description": "Tote bag",
+    "price": 140
+  },
+  {
+    "id": 3,
+    "image": "items/hoyeon.jpeg",
+    "description": "Hat Collection",
+    "price": 1540
+  },
+  {
+    "id": 4,
+    "image": "items/hayley.jpg",
+    "description": "Jellycats (2 succulent jellycats)",
+    "price": 80
+  },
+  {
+    "id": 5,
+    "image": "items/david.jpg",
+    "description": "Climbing Shoes",
+    "price": 250
+  },
+  {
+    "id": 6,
+    "image": "items/aaron.jpeg",
+    "description": "Lee Enfield no.4 MK 1 long branch, chrome parade rifle ",
+    "price": 2300
+  },
+  {
+    "id": 7,
+    "image": "items/ria.jpeg",
+    "description": "bubble tea... at hello bubble",
+    "price": 276.92
+  },
+  {
+    "id": 8,
+    "image": "items/justin.jpg",
+    "description": "In-Ear Monitor",
+    "price": 450
+  },
+  {
+    "id": 9,
+    "image": "items/jennifer.jpg",
+    "description": "Film camera",
+    "price": 1100
+  },
+  {
+    "id": 10,
+    "image": "items/yuk.jpg",
+    "description": "Wired Earphones",
+    "price": 136.22
+  },
+  {
+    "id": 11,
+    "image": "items/shay.jpeg",
+    "description": "Car Wash Items",
+    "price": 200
+  },
+  {
+    "id": 12,
+    "image": "items/jason.jpg",
+    "description": "Nippers",
+    "price": 100
+  },
+  {
+    "id": 13,
+    "image": "items/jay.jpeg",
+    "description": "Costco Poutine",
+    "price": 6.99
+  },
+  {
+    "id": 14,
+    "image": "items/alex.jpeg",
+    "description": "A Watch",
+    "price": 1300
+  },
+  {
+    "id": 15,
+    "image": "items/sam.jpg",
+    "description": "Camera Collection + Film",
+    "price": 2580
+  },
+  {
+    "id": 16,
+    "image": "items/smartphone.jpg",
+    "description": "Smartphone I upgraded too quickly",
+    "price": 899.99
+  },
+  {
+    "id": 17,
+    "image": "items/watch.jpg",
+    "description": "Watch that's too fancy for everyday",
+    "price": 249.99
+  },
+  {
+    "id": 18,
+    "image": "items/camera.jpg",
+    "description": "Camera for the photography phase",
+    "price": 799.99
+  },
+  {
+    "id": 19,
+    "image": "items/headphones.jpg",
+    "description": "Noise-canceling headphones I rarely use",
+    "price": 179.99
+  },
+  {
+    "id": 20,
+    "image": "items/tablet.jpg",
+    "description": "Tablet that replaced my laptop but didn't",
+    "price": 649.99
+  },
+  {
+    "id": 21,
+    "image": "items/speaker.jpg",
+    "description": "Bluetooth speaker for outdoor parties",
+    "price": 129.99
+  },
+  {
+    "id": 22,
+    "image": "items/lamp.jpg",
+    "description": "Designer lamp that's too bright",
+    "price": 189.99
+  },
+  {
+    "id": 23,
+    "image": "items/rug.jpg",
+    "description": "Area rug that doesn't match anything",
+    "price": 299.99
+  },
+  {
+    "id": 24,
+    "image": "items/painting.jpg",
+    "description": "Art piece I thought would appreciate",
+    "price": 499.99
+  },
+  {
+    "id": 25,
+    "image": "items/vase.jpg",
+    "description": "Vase that's too tall for any flowers",
+    "price": 89.99
+  },
+  {
+    "id": 26,
+    "image": "items/mirror.jpg",
+    "description": "Full-length mirror that warps reality",
+    "price": 159.99
+  },
+  {
+    "id": 27,
+    "image": "items/plant.jpg",
+    "description": "Indoor plant that's impossible to keep alive",
+    "price": 69.99
+  },
+  {
+    "id": 28,
+    "image": "items/book.jpg",
+    "description": "Book series I started but never finished",
+    "price": 119.99
+  },
+  {
+    "id": 29,
+    "image": "items/magazine.jpg",
+    "description": "Magazine subscription I forgot to cancel",
+    "price": 39.99
+  },
+  {
+    "id": 30,
+    "image": "items/newspaper.jpg",
+    "description": "Newspaper delivery I never read",
+    "price": 29.99
+  }
+]

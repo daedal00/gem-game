@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Logic Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .test-section {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+      button {
+        margin: 5px;
+        padding: 10px;
+      }
+      input {
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Game Logic Test</h1>
+
+    <div class="test-section">
+      <h3>Test Margin Calculation</h3>
+      <p>Current Margin: <span id="current-margin">2</span>%</p>
+      <p>Wrong Guesses: <span id="wrong-guesses">0</span>/5</p>
+      <p>Item Price: $<span id="item-price">299.99</span></p>
+      <p>Acceptable Range: $<span id="range">Loading...</span></p>
+
+      <input
+        type="number"
+        id="test-guess"
+        placeholder="Enter your guess"
+        step="0.01"
+      />
+      <button onclick="testGuess()">Test Guess</button>
+      <button onclick="resetTest()">Reset Test</button>
+
+      <div id="test-result"></div>
+    </div>
+
+    <script>
+      // Simplified game logic for testing
+      const marginProgression = [5, 10, 15, 20, 25, 30];
+      let currentMarginIndex = 0;
+      let wrongGuesses = 0;
+      const itemPrice = 299.99;
+
+      function updateDisplay() {
+        document.getElementById("current-margin").textContent =
+          marginProgression[currentMarginIndex];
+        document.getElementById("wrong-guesses").textContent = wrongGuesses;
+        document.getElementById("item-price").textContent =
+          itemPrice.toFixed(2);
+
+        const marginAmount =
+          (itemPrice * marginProgression[currentMarginIndex]) / 100;
+        const lowerBound = itemPrice - marginAmount;
+        const upperBound = itemPrice + marginAmount;
+        document.getElementById("range").textContent = `${lowerBound.toFixed(
+          2
+        )} - $${upperBound.toFixed(2)}`;
+      }
+
+      function testGuess() {
+        const guess = parseFloat(document.getElementById("test-guess").value);
+        if (isNaN(guess)) {
+          document.getElementById("test-result").innerHTML =
+            '<p style="color: red;">Please enter a valid number</p>';
+          return;
+        }
+
+        const currentMargin = marginProgression[currentMarginIndex];
+        const marginAmount = (itemPrice * currentMargin) / 100;
+        const lowerBound = itemPrice - marginAmount;
+        const upperBound = itemPrice + marginAmount;
+
+        const isCorrect = guess >= lowerBound && guess <= upperBound;
+
+        if (isCorrect) {
+          document.getElementById("test-result").innerHTML =
+            '<p style="color: green;">Correct! You can continue.</p>';
+          // Reset margin for next item
+          currentMarginIndex = 0;
+          wrongGuesses = 0;
+        } else {
+          wrongGuesses++;
+          if (wrongGuesses >= 5) {
+            document.getElementById("test-result").innerHTML =
+              '<p style="color: red;">Game Over - Too many wrong guesses!</p>';
+            return;
+          }
+
+          // Increase margin
+          if (currentMarginIndex < marginProgression.length - 1) {
+            currentMarginIndex++;
+          }
+
+          document.getElementById(
+            "test-result"
+          ).innerHTML = `<p style="color: orange;">Try again! Margin is now ${marginProgression[currentMarginIndex]}%</p>`;
+        }
+
+        updateDisplay();
+        document.getElementById("test-guess").value = "";
+      }
+
+      function resetTest() {
+        currentMarginIndex = 0;
+        wrongGuesses = 0;
+        updateDisplay();
+        document.getElementById("test-result").innerHTML = "";
+        document.getElementById("test-guess").value = "";
+      }
+
+      // Initialize display
+      updateDisplay();
+    </script>
+  </body>
+</html>
