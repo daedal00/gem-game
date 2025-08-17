@@ -113,9 +113,10 @@
   },
   {
     "id": 17,
-    "image": "items/watch.jpg",
-    "description": "Watch that's too fancy for everyday",
-    "price": 249.99
+    "image": "items/jay2.jpeg",
+    "description": "Dental Chair",
+    "price": 40000,
+    "leader": "Jay"
   },
   {
     "id": 18,
