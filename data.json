@@ -120,15 +120,17 @@
   },
   {
     "id": 18,
-    "image": "items/camera.jpg",
-    "description": "Camera for the photography phase",
-    "price": 799.99
+    "image": "items/shin.JPG",
+    "description": "board game: 'Primal: The Awakening'. Hand painted miniatures",
+    "price": 600,
+    "leader": "Shinjin"
   },
   {
     "id": 19,
-    "image": "items/headphones.jpg",
-    "description": "Noise-canceling headphones I rarely use",
-    "price": 179.99
+    "image": "items/peter.jpeg",
+    "description": "Projector",
+    "price": 190,
+    "leader": "Peter"
   },
   {
     "id": 20,
