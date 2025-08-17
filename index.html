@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Price Guessing Game</title>
+    <title>Town of Vanity</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,18 +11,21 @@
       <!-- Welcome Screen -->
       <div id="welcome-screen" class="screen active">
         <div class="header">
-          <h1>💰 Price Guessing Game</h1>
-          <p class="subtitle">Guess the price of embarrassing purchases!</p>
+          <h1>🏪 Town of Vanity</h1>
+          <p class="subtitle">
+            Guess the price of leaders' embarrassing purchases!
+          </p>
         </div>
 
         <div class="rules">
           <h2>How to Play:</h2>
           <ul>
             <li>Guess the price of items within the margin of error</li>
-            <li>Fixed 10% margin of error for all items</li>
+            <li>Fixed 8% margin of error for all items</li>
             <li>Get 15 out of 30 items correct to pass!</li>
             <li>Submit your guess and move to the next question</li>
             <li>Get feedback on each answer with hot/cold indicators!</li>
+            <li>See which leader owns each item when you guess correctly!</li>
             <li>Questions appear in the same order each time</li>
           </ul>
 
@@ -30,7 +33,7 @@
             <h3>🔥 Hot/Cold Guide:</h3>
             <ul>
               <li><strong>🔥 Very Hot:</strong> Within 5% of actual price</li>
-              <li><strong>🔥 Hot:</strong> Within 10% of actual price</li>
+              <li><strong>🔥 Hot:</strong> Within 8% of actual price</li>
               <li><strong>🌡️ Warm:</strong> Within 20% of actual price</li>
               <li><strong>❄️ Cold:</strong> Within 30% of actual price</li>
               <li><strong>🧊 Very Cold:</strong> More than 30% off</li>
@@ -62,7 +65,7 @@
 
         <div class="guess-section">
           <div class="margin-info">
-            <p>Margin of Error: <span id="current-margin">10%</span></p>
+            <p>Margin of Error: <span id="current-margin">8%</span></p>
           </div>
 
           <div class="input-group">

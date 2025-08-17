@@ -1,1 +1,1 @@
-# Gem Youth 2025 Summer Retreat Price Guessing Game
+# Gem Youth 2025 Summer Retreat - Town of Vanity

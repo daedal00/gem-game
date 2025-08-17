@@ -3,97 +3,113 @@
     "id": 1,
     "image": "items/nick.jpeg",
     "description": "Shoes",
-    "price": 830
+    "price": 830,
+    "leader": "Nick"
   },
   {
     "id": 2,
     "image": "items/bobby.jpg",
     "description": "Tote bag",
-    "price": 140
+    "price": 140,
+    "leader": "Bobby"
   },
   {
     "id": 3,
     "image": "items/hoyeon.jpeg",
     "description": "Hat Collection",
-    "price": 1540
+    "price": 1540,
+    "leader": "Hoyeon"
   },
   {
     "id": 4,
     "image": "items/hayley.jpg",
     "description": "Jellycats (2 succulent jellycats)",
-    "price": 80
+    "price": 80,
+    "leader": "Hayley"
   },
   {
     "id": 5,
     "image": "items/david.jpg",
     "description": "Climbing Shoes",
-    "price": 250
+    "price": 250,
+    "leader": "David"
   },
   {
     "id": 6,
     "image": "items/aaron.jpeg",
     "description": "Lee Enfield no.4 MK 1 long branch, chrome parade rifle ",
-    "price": 2300
+    "price": 2300,
+    "leader": "Aaron"
   },
   {
     "id": 7,
     "image": "items/ria.jpeg",
     "description": "bubble tea... at hello bubble",
-    "price": 276.92
+    "price": 276.92,
+    "leader": "Ria"
   },
   {
     "id": 8,
     "image": "items/justin.jpg",
     "description": "In-Ear Monitor",
-    "price": 450
+    "price": 450,
+    "leader": "Justin"
   },
   {
     "id": 9,
     "image": "items/jennifer.jpg",
     "description": "Film camera",
-    "price": 1100
+    "price": 1100,
+    "leader": "Jennifer"
   },
   {
     "id": 10,
     "image": "items/yuk.jpg",
     "description": "Wired Earphones",
-    "price": 136.22
+    "price": 136.22,
+    "leader": "Yukyeom"
   },
   {
     "id": 11,
     "image": "items/shay.jpeg",
     "description": "Car Wash Items",
-    "price": 200
+    "price": 200,
+    "leader": "Shay"
   },
   {
     "id": 12,
     "image": "items/jason.jpg",
     "description": "Nippers",
-    "price": 100
+    "price": 100,
+    "leader": "Jason"
   },
   {
     "id": 13,
     "image": "items/jay.jpeg",
-    "description": "Costco Poutine",
-    "price": 6.99
+    "description": "Coat",
+    "price": 2600,
+    "leader": "Jay"
   },
   {
     "id": 14,
     "image": "items/alex.jpeg",
     "description": "A Watch",
-    "price": 1300
+    "price": 1300,
+    "leader": "Alex"
   },
   {
     "id": 15,
     "image": "items/sam.jpg",
     "description": "Camera Collection + Film",
-    "price": 2580
+    "price": 2580,
+    "leader": "Samuel"
   },
   {
     "id": 16,
-    "image": "items/smartphone.jpg",
-    "description": "Smartphone I upgraded too quickly",
-    "price": 899.99
+    "image": "items/sophia.jpeg",
+    "description": "Snowglobe",
+    "price": 35,
+    "leader": "Sophia"
   },
   {
     "id": 17,

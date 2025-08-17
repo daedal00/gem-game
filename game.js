@@ -3,8 +3,9 @@ class PriceGuessingGame {
     this.currentItemIndex = 0;
     this.score = 0;
     this.totalItems = 30;
-    this.margin = 10; // Fixed 10% margin for all items
+    this.margin = 8; // Change margin here
     this.gameState = "welcome"; // welcome, playing, gameOver
+    this.hasSubmitted = false; // Track if current item has been answered
 
     this.initializeEventListeners();
     this.loadGameData();
@@ -255,6 +256,9 @@ class PriceGuessingGame {
     this.showScreen("game-screen");
     this.displayCurrentItem();
     this.updateUI();
+
+    // Ensure submit button is visible when starting
+    document.getElementById("submit-guess").style.display = "block";
   }
 
   showScreen(screenId) {
@@ -280,12 +284,20 @@ class PriceGuessingGame {
     // Clear previous feedback
     this.hideFeedback();
 
-    // Clear input
+    // Clear input, show submit button, and reset submission flag
     document.getElementById("price-guess").value = "";
+    document.getElementById("price-guess").disabled = false;
     document.getElementById("price-guess").focus();
+    document.getElementById("submit-guess").style.display = "block";
+    this.hasSubmitted = false; // Reset for new item
   }
 
   submitGuess() {
+    // Prevent multiple submissions for the same item
+    if (this.hasSubmitted) {
+      return;
+    }
+
     const guessInput = document.getElementById("price-guess");
     const guess = parseFloat(guessInput.value);
 
@@ -294,10 +306,13 @@ class PriceGuessingGame {
       return;
     }
 
+    // Mark as submitted to prevent multiple answers
+    this.hasSubmitted = true;
+
     const currentItem = this.items[this.currentItemIndex];
     const actualPrice = currentItem.price;
 
-    // Calculate if guess is within 15% margin
+    // Calculate if guess is within 8% margin
     const marginAmount = (actualPrice * this.margin) / 100;
     const lowerBound = actualPrice - marginAmount;
     const upperBound = actualPrice + marginAmount;
@@ -309,10 +324,10 @@ class PriceGuessingGame {
     }
 
     // Show feedback with hot/cold indication
-    this.showGuessFeedback(guess, actualPrice, isCorrect);
+    this.showGuessFeedback(guess, actualPrice, isCorrect, currentItem);
   }
 
-  showGuessFeedback(guess, actualPrice, isCorrect) {
+  showGuessFeedback(guess, actualPrice, isCorrect, currentItem) {
     const feedback = document.getElementById("feedback");
     const feedbackContent = document.getElementById("feedback-content");
 
@@ -324,7 +339,9 @@ class PriceGuessingGame {
     let type = "";
 
     if (isCorrect) {
-      message = `✅ Correct!`;
+      message = `✅ Correct! This item belongs to ${
+        currentItem.leader || "a leader"
+      }`;
       type = "correct";
     } else {
       // Determine hot/cold based on percentage off (no exact percentages shown)
@@ -349,7 +366,9 @@ class PriceGuessingGame {
     feedback.className = `feedback ${type}`;
     feedback.style.display = "block";
 
-    // Show next item button
+    // Hide submit button, disable input, and show next item button
+    document.getElementById("submit-guess").style.display = "none";
+    document.getElementById("price-guess").disabled = true;
     document.getElementById("next-item").style.display = "block";
   }
 
@@ -382,8 +401,8 @@ class PriceGuessingGame {
     const needed = Math.max(0, 15 - this.score);
     document.getElementById("correct-needed").textContent = needed;
 
-    // Update margin info (fixed 10%)
-    document.getElementById("current-margin").textContent = "10%";
+    // Update margin info (fixed 8%)
+    document.getElementById("current-margin").textContent = "8%";
   }
 
   gameComplete() {
@@ -405,6 +424,7 @@ class PriceGuessingGame {
     this.currentItemIndex = 0;
     this.score = 0;
     this.gameState = "welcome";
+    this.hasSubmitted = false; // Reset submission flag
 
     // Keep items in original order (no shuffling)
 
