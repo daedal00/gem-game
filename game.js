@@ -347,10 +347,13 @@ class PriceGuessingGame {
       // Determine hot/cold based on percentage off (no exact percentages shown)
       let temperature = "";
       if (percentageOff <= 8) {
-        temperature = "🔥 Very Hot!";
+        // This is correct - handled separately above
+        return;
       } else if (percentageOff <= 15) {
+        temperature = "🔥 Very Hot!";
+      } else if (percentageOff <= 30) {
         temperature = "🌡️ Warm";
-      } else if (percentageOff <= 25) {
+      } else if (percentageOff <= 60) {
         temperature = "❄️ Cold";
       } else {
         temperature = "🧊 Very Cold!";

@@ -190,15 +190,17 @@
   },
   {
     "id": 28,
-    "image": "items/book.jpg",
-    "description": "Book series I started but never finished",
-    "price": 119.99
+    "image": "items/emma.jpeg",
+    "description": "Fujifilm X-T3",
+    "price": 875,
+    "leader": "Emma"
   },
   {
     "id": 29,
-    "image": "items/magazine.jpg",
-    "description": "Magazine subscription I forgot to cancel",
-    "price": 39.99
+    "image": "items/sam2.jpg",
+    "description": "2 custom keyboards, boba u4t + gateron ink black switches, keychron",
+    "price": 950,
+    "leader": "Samuel"
   },
   {
     "id": 30,
