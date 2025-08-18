@@ -2,7 +2,7 @@ class PriceGuessingGame {
   constructor() {
     this.currentItemIndex = 0;
     this.score = 0;
-    this.totalItems = 30;
+    this.totalItems = 32;
     this.margin = 8; // Change margin here
     this.gameState = "welcome"; // welcome, playing, gameOver
     this.hasSubmitted = false; // Track if current item has been answered
@@ -359,17 +359,8 @@ class PriceGuessingGame {
         temperature = "🧊 Very Cold!";
       }
 
-      // Add direction hint if 75% or more off
-      if (percentageOff >= 75) {
-        if (guess > actualPrice) {
-          directionHint = " (Try Lower!)";
-        } else {
-          directionHint = " (Try Higher!)";
-        }
-      }
-
-      // Fallback: ensure direction hint shows for very extreme guesses
-      if (percentageOff >= 90) {
+      // Add direction hint if 60% or more off
+      if (percentageOff >= 60) {
         if (guess > actualPrice) {
           directionHint = " (Try Lower!)";
         } else {

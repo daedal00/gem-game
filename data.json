@@ -208,5 +208,19 @@
     "description": "Fujifilm x100f",
     "price": 1200,
     "leader": "Grace"
+  },
+  {
+    "id": 31,
+    "image": "items/esther3.jpeg",
+    "description": "Dog named Clyde",
+    "price": 4000,
+    "leader": "Esther Choi"
+  },
+  {
+    "id": 32,
+    "image": "items/esther4.jpeg",
+    "description": "Sonny Angels Collection",
+    "price": 650,
+    "leader": "Esther Choi"
   }
 ]
