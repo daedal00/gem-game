@@ -346,6 +346,8 @@ class PriceGuessingGame {
     } else {
       // Determine hot/cold based on percentage off (no exact percentages shown)
       let temperature = "";
+      let directionHint = "";
+
       if (percentageOff <= 8) {
         // This is correct - handled separately above
         return;
@@ -359,7 +361,16 @@ class PriceGuessingGame {
         temperature = "🧊 Very Cold!";
       }
 
-      message = `❌ Wrong! ${temperature}`;
+      // Add direction hint if 100% or more off
+      if (percentageOff >= 100) {
+        if (guess > actualPrice) {
+          directionHint = " (Try Lower!)";
+        } else {
+          directionHint = " (Try Higher!)";
+        }
+      }
+
+      message = `❌ Wrong! ${temperature}${directionHint}`;
       type = "incorrect";
     }
 
