@@ -333,7 +333,8 @@ class PriceGuessingGame {
 
     // Calculate how close the guess was (percentage)
     const difference = Math.abs(guess - actualPrice);
-    const percentageOff = (difference / actualPrice) * 100;
+    const percentageOff =
+      Math.round((difference / actualPrice) * 100 * 100) / 100; // Round to 2 decimal places
 
     let message = "";
     let type = "";
@@ -367,7 +368,21 @@ class PriceGuessingGame {
         }
       }
 
-      message = `❌ Wrong! ${temperature}${directionHint}`;
+      // Fallback: ensure direction hint shows for very extreme guesses
+      if (percentageOff >= 90) {
+        if (guess > actualPrice) {
+          directionHint = " (Try Lower!)";
+        } else {
+          directionHint = " (Try Higher!)";
+        }
+      }
+
+      // Ensure direction hint is always visible when it should be
+      if (directionHint) {
+        message = `❌ Wrong! ${temperature}${directionHint}`;
+      } else {
+        message = `❌ Wrong! ${temperature}`;
+      }
       type = "incorrect";
     }
 
