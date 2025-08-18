@@ -348,10 +348,7 @@ class PriceGuessingGame {
       let temperature = "";
       let directionHint = "";
 
-      if (percentageOff <= 8) {
-        // This is correct - handled separately above
-        return;
-      } else if (percentageOff <= 15) {
+      if (percentageOff <= 15) {
         temperature = "🔥 Very Hot!";
       } else if (percentageOff <= 30) {
         temperature = "🌡️ Warm";
@@ -361,8 +358,8 @@ class PriceGuessingGame {
         temperature = "🧊 Very Cold!";
       }
 
-      // Add direction hint if 100% or more off
-      if (percentageOff >= 100) {
+      // Add direction hint if 75% or more off
+      if (percentageOff >= 75) {
         if (guess > actualPrice) {
           directionHint = " (Try Lower!)";
         } else {

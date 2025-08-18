@@ -204,8 +204,9 @@
   },
   {
     "id": 30,
-    "image": "items/newspaper.jpg",
-    "description": "Newspaper delivery I never read",
-    "price": 29.99
+    "image": "items/grace.jpg",
+    "description": "Fujifilm x100f",
+    "price": 1200,
+    "leader": "Grace"
   }
 ]
