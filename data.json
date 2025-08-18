@@ -229,5 +229,12 @@
     "description": "My son (the dog on the left) named Brio",
     "price": 2000,
     "leader": "Bobby"
+  },
+  {
+    "id": 34,
+    "image": "items/jen2.jpg",
+    "description": "Hiking Boots",
+    "price": 330,
+    "leader": "Jennifer"
   }
 ]
