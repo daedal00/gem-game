@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": "items/nick.jpeg",
-    "description": "Shoes",
+    "description": "Travis Scott x Nike Shoes",
     "price": 830,
     "leader": "Nick"
   },
@@ -30,7 +30,7 @@
   {
     "id": 5,
     "image": "items/david.jpg",
-    "description": "Climbing Shoes",
+    "description": "Scarpa Climbing Shoes",
     "price": 250,
     "leader": "David"
   },
@@ -58,7 +58,7 @@
   {
     "id": 9,
     "image": "items/jennifer.jpg",
-    "description": "Film camera",
+    "description": "Contax Film camera",
     "price": 1100,
     "leader": "Jennifer"
   },
@@ -86,21 +86,21 @@
   {
     "id": 13,
     "image": "items/jay.jpeg",
-    "description": "Coat",
+    "description": "Coat (Burberry)",
     "price": 2600,
     "leader": "Jay"
   },
   {
     "id": 14,
     "image": "items/alex.jpeg",
-    "description": "A Watch",
+    "description": "A Watch (Bulova)",
     "price": 1300,
     "leader": "Alex"
   },
   {
     "id": 15,
     "image": "items/sam.jpg",
-    "description": "Camera Collection + Film",
+    "description": "Camera Collection (Secondhand) + Film",
     "price": 2580,
     "leader": "Samuel"
   },
@@ -135,14 +135,14 @@
   {
     "id": 20,
     "image": "items/erin.jpeg",
-    "description": "Camera",
+    "description": "OlympusCamera",
     "price": 1049.99,
     "leader": "Erin"
   },
   {
     "id": 21,
     "image": "items/michael.jpg",
-    "description": "Guitar",
+    "description": "Guitar (Taylor Made)",
     "price": 1600,
     "leader": "Michael"
   },
@@ -191,7 +191,7 @@
   {
     "id": 28,
     "image": "items/emma.jpeg",
-    "description": "Fujifilm X-T3",
+    "description": "Fujifilm X-T3 Camera (Secondhand)",
     "price": 875,
     "leader": "Emma"
   },
@@ -205,7 +205,7 @@
   {
     "id": 30,
     "image": "items/grace.jpg",
-    "description": "Fujifilm x100f",
+    "description": "Fujifilm x100f Camera (Secondhand)",
     "price": 1200,
     "leader": "Grace"
   },
@@ -233,8 +233,15 @@
   {
     "id": 34,
     "image": "items/jen2.jpg",
-    "description": "Hiking Boots",
+    "description": "Hiking Boots (Scarpa)",
     "price": 330,
     "leader": "Jennifer"
+  },
+  {
+    "id": 35,
+    "image": "items/alex2.jpeg",
+    "description": "Racing Seat",
+    "price": 1900,
+    "leader": "Alex"
   }
 ]
