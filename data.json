@@ -264,5 +264,12 @@
     "description": "Sewing Machine",
     "price": 291.18,
     "leader": "Chaeyoung"
+  },
+  {
+    "id": 39,
+    "image": "items/estherk.jpeg",
+    "description": "norco indie bike (secondhand)",
+    "price": 400,
+    "leader": "Esther Kim"
   }
 ]
