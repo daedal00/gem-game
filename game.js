@@ -321,6 +321,12 @@ class PriceGuessingGame {
 
     if (isCorrect) {
       this.score++;
+
+      // Check if they've reached 15 correct answers (win condition)
+      if (this.score >= 15) {
+        this.gameComplete();
+        return;
+      }
     }
 
     // Show feedback with hot/cold indication
