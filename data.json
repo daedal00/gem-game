@@ -205,9 +205,9 @@
   {
     "id": 30,
     "image": "items/grace.jpg",
-    "description": "Fujifilm x100f Camera (Secondhand)",
-    "price": 1200,
-    "leader": "Grace"
+    "description": "Harry Potter Illustrated book",
+    "price": 60,
+    "leader": "Grace Lee"
   },
   {
     "id": 31,
@@ -243,5 +243,26 @@
     "description": "Racing Seat",
     "price": 1900,
     "leader": "Alex"
+  },
+  {
+    "id": 36,
+    "image": "items/grace2.jpg",
+    "description": "Sylvanian Families figure",
+    "price": 25,
+    "leader": "Grace Lee"
+  },
+  {
+    "id": 37,
+    "image": "items/grace3.jpg",
+    "description": "Perfume",
+    "price": 300,
+    "leader": "Grace Lee"
+  },
+  {
+    "id": 38,
+    "image": "items/chae.jpeg",
+    "description": "Sewing Machine",
+    "price": 291.18,
+    "leader": "Chaeyoung"
   }
 ]
