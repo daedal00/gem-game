@@ -222,5 +222,12 @@
     "description": "Sonny Angels Collection",
     "price": 650,
     "leader": "Esther Choi"
+  },
+  {
+    "id": 33,
+    "image": "items/bobby2.JPG",
+    "description": "My son (the dog on the left) named Brio",
+    "price": 2000,
+    "leader": "Bobby"
   }
 ]

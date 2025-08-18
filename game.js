@@ -2,7 +2,7 @@ class PriceGuessingGame {
   constructor() {
     this.currentItemIndex = 0;
     this.score = 0;
-    this.totalItems = 32;
+    this.totalItems = 33;
     this.margin = 8; // Change margin here
     this.gameState = "welcome"; // welcome, playing, gameOver
     this.hasSubmitted = false; // Track if current item has been answered
